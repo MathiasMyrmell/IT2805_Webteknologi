@@ -1,0 +1,16 @@
+1. Instead of getContext('2d'), we use getContext('webgl').
+
+2. To draw a blue ball I would do:
+    //initialize
+    canvas=document.getElementById("canvas");
+    context=canvas.getContext("2d");
+    //draw ball
+    context.beginPath();
+    context.fillStyle = 'blue';
+    context.arc(x_center, y_center, radius, start_angle, end_angle); //for a full circle, start_angle = 0, end_angle = 2*Math.PI
+    context.fill();
+    context.stroke();
+
+3. To make that method more sparse, i would use Array.filter() this way;
+    const countries = ['Norway', 'Sweden', 'Denmark', 'New Zealand'];
+    const countriesStartingWithN = countries.filter(country => country.startsWith('N'));

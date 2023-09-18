@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="navbar-container" id="navbarWeb">
+      <div id="logo">
+        <img src="../img/sailorsmate_logo_white.png" onclick="(redirect('./home.html'))" alt="SailorsMate logo" />
+      </div>
+      <div class="navbar-element">
+            <div class="navbar_button" onclick="redirect('./home.html')">
+              <span>Hjem</span>
+            </div> 
+        </div> 
+      <div class="dropdown">
+          <div class="navbar_button">
+            <span>Produkter &blacktriangledown;</span>
+            <div class="dropdownelements">
+              <a href="./kartplotter.html">
+                <span>Kartplotter</span>
+              </a>
+              <a href="./additionalEquipment.html">  
+                <span>Tilleggsutstyr</span>
+              </a>
+              <a href="./fangstdagbok.html">
+                <span>Fangstdagbok</span>
+              </a>
+            </div> 
+          </div>
+        </div>
+        <div class="navbar-element" >
+            <div class="navbar_button" onclick="redirect('./update.html')">
+              <span>Last ned</span>
+            </div>
+        </div>
+        <div class="navbar-element">
+            <div class="navbar_button" onclick="redirect('./retailers.html')">
+              <span>Forhandlere</span>
+            </div>
+        </div>
+        <div class="navbar-element">
+            <div class="navbar_button" onclick="redirect('./contact.html')">
+              <span>Kontakt oss</span>
+            </div>
+        </div>
+        <div class="navbar-element">
+          <div class="navbar_button" onclick="alert('Engelsk oversettelse ikke implementert enda.')">
+            <span>English</span>
+          </div>
+        </div>
+      <div class="navbar-element">
+      </div>
+    </div>
+    <script src="../javascript/commonFunctions.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+1. with the 32 bit floating number system that javascript uses, decimal
+fractions will not be accurate. E.g. 0.1 will not be exactly 0.1, and
+therefore the 0.1+0.2===0.3 will not give true
+
+2. method specifies how to send the data in the form.
+
+3. when the method is changed to get, the form data is sent på the url as name/value
+pairs. Therefore the url will change.
+
+4. If you dont have some server validation, a user can manipulate attributes and
+thereby send manipulated data.
+
+5. textarea is appropriate to use when a large input is required. In the textarea
+you can have linebreaks that makes it easier to read a long text. 
+Input does not have linebreak.

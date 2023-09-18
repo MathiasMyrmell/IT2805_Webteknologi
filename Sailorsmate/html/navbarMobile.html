@@ -1,0 +1,43 @@
+<html>
+  <body>
+    <div class="navbar-container" id="navbarMobile">
+        <div id="logo">
+            <img src="../img/sailorsmate_logo_white.png" onclick="(redirect('./home.html'))" alt="SailorsMate logo" />
+        </div>
+        <button class="burgerButton" onclick="openNav()">
+            <img src="../img/burgerMenu.png" alt="Burger menu" />
+        </button>
+    </div> 
+    <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <button class="elements" onclick="redirect('./home.html')">
+        <span>Hjem</span>
+    </button>
+    <button class="elements" onclick="showElements()">
+        <span>Produkter &blacktriangledown;</span>
+    </button>
+    <button class="underelements" onclick="redirect('./kartplotter.html')">
+        <span>Kartplotter</span>
+    </button>
+    <button class="underelements" onclick="redirect('#')">
+        <span>Tilleggsutstyr</span>
+    </button>
+    <button class="underelements" onclick="redirect('./fangstdagbok.html')">
+        <span>Fangstdagbok</span>
+    </button>
+    <button class="elements" onclick="redirect('./update.html')">
+        <span>Last ned</span>
+    </button>
+    <button class="elements" onclick="redirect('./retailers.html')">
+        <span>Forhandlere</span>
+    </button>
+    <button class="elements" onclick="redirect('./contact.html')">
+        <span>Kontakt oss</span>
+    </button>
+    <button class="elements_bottom" onclick="alert('Engelsk oversettelse ikke implementert enda')">
+        <span>English</span>
+    </button>
+    </div>
+  </body>
+  <script src="../javascript/commonFunctions.js"></script>
+</html>

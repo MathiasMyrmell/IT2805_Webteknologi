@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button id="commonButton" onclick="toggleGuidance('hide','content')">Lukk &#10006;</button>
+        <h1>Ved feil</h1>
+        Ved feil kan du ringe:
+        <ul>
+            <li><b>FMC:</b> 55 23 83 36 ha kallesignalet klart før du ringer</li>
+            <li><b>SailorsMate:</b> 975 25 608 ha gjerne teamviewernummer klart før du ringer</li>
+        </ul>
+        <a href = "mailto:haavard.holm@sailorsmate.com?subject=Feedback">Send Feeback</a><br><br>
+
+        Dersom det oppstår feil i forbindelse med posisjonsrapportering eller elektronisk rapportering mens fisket pågår
+        skal meldingene sendes manuelt til Fiskeridirektoratet via:
+        <ul>
+            <li>E-post: FMC@fiskeridir.no , eller</li>
+            <li>Telefaks: +47 55 23 82 76.</li>
+        </ul>
+        Meldingene skal i disse tilfellene utformes som vist nedenfor:
+
+        <h2>MELDING OM HAVNEAVGANG (DEP)</h2>
+        Manuell melding om havneavgang skal utformes slik:
+        <ul>
+            <li><b>Eksempel 1: Når fartøyet har fangst om bord ved fiskestart</b><br> 
+                Som under. Fiskesorter kan angis i klar tekst eller oppgis med FAO fiskesortkoder.</li>
+            <li><b>Eksempel 2: Når fartøyet ikke har fangst om bord ved fiskestart</b><br>
+                Som under, med unntak av OB = 0</li>
+        </ul>
+        <table class="veildning">
+            <tr>
+                <td>TM</td>
+                <td>=</td>
+                <td>DEP</td>
+            </tr>
+            <tr>
+                <td>RN</td>
+                <td>=</td>
+                <td>Oppgis som om meldingen hadde vært sendt elektronisk ellers skrives ordet UKJENT</td>
+            </tr>
+            <tr>
+                <td>SQ </td>
+                <td>=</td>
+                <td>BLANK</td>
+            </tr>
+            <tr>
+                <td>RC</td>
+                <td>=</td>
+                <td>RADIO50</td>
+            </tr>
+            <tr>
+                <td>NA</td>
+                <td>=</td>
+                <td>KONTIKI</td>
+            </tr>
+            <tr>
+                <td>XR</td>
+                <td>=</td>
+                <td>M-101-AK</td>
+            </tr>
+            <tr>
+                <td>MA</td>
+                <td>=</td>
+                <td>HANS HANSEN</td>
+            </tr>
+            <tr>
+                <td>DA</td>
+                <td>=</td>
+                <td>20090929 (meldingens sendetidspunkt, dato og tid i UTC)</td>
+            </tr>
+            <tr>
+                <td>TI</td>
+                <td>=</td>
+                <td>2050</td>
+            </tr>
+            <tr>
+                <td>PO</td>
+                <td>=</td>
+                <td>NOTRD eller Trondheim i klar tekst hvis kode ikke er tilgjengelig</td>
+            </tr>
+            <tr>
+                <td>ZD</td>
+                <td>=</td>
+                <td>20090929 (avgang havn tidspunkt, dato og tid  i UTC)</td>
+            </tr>
+            <tr>
+                <td>ZT</td>
+                <td>=</td>
+                <td>1930</td>
+            </tr>
+            <tr>
+                <td>OB</td>
+                <td>=</td>
+                <td>TORSK 50000, HYSE 13000, SEI 25600, LANGE 11300</td>
+            </tr>
+            <tr>
+                <td>PD</td>
+                <td>=</td>
+                <td>20090930 (antatt fiskestart tidspunkt, dato og tid i UTC)</td>
+            </tr>
+            <tr>
+                <td>PT </td>
+                <td>=</td>
+                <td>0100</td>
+            </tr>
+            <tr>
+                <td>LA</td>
+                <td>=</td>
+                <td>N6432</td>
+            </tr>
+            <tr>
+                <td>LO</td>
+                <td>=</td>
+                <td>E00915</td>
+            </tr>
+            <tr>
+                <td>AC</td>
+                <td>=</td>
+                <td>FIS</td>
+            </tr>
+            <tr>
+                <td>DS </td>
+                <td>=</td>
+                <td>TORSK</td>
+            </tr>
+            <tr>
+                <td>RE</td>
+                <td>=</td>
+                <td>Feltet skal være blankt ved første gangs sending av meldingen. Ved kansellering av en tidligere sendt melding må det sendes inn en kopi av selve meldingen hvor RE feltet er angitt med koden 521 for kansellering</td>
+            </tr>
+        </table>
+
+        <h2>MELDING OM FANGST (DCA)</h2>
+        Manuell melding om fangst skal utformes slik:
+        <table class="veildning">
+            <thead>
+                <tr>
+                    <th colspan="3">Blokk A</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>TM</td>
+                <td>=</td>
+                <td>DCA</td>
+            </tr>
+            <tr>
+                <td>RN</td>
+                <td>=</td>
+                <td>Oppgis som om meldingen hadde vært sendt elektronisk ellers skrives ordet UKJENT</td>
+            </tr>
+            <tr>
+                <td>SQ</td>
+                <td>=</td>
+                <td>Dersom SQ ikke er i bruk settes linjen blank. Dersom SQ er i bruk oppgis det som om meldingen ville vært sendt elektronisk ellers skrives ordet UKJENT</td>
+            </tr>
+            <tr>
+                <td>RC</td>
+                <td>=</td>
+                <td>RADIO50</td>
+            </tr>
+            <tr>
+                <td>NA</td>
+                <td>=</td>
+                <td>KONTIKI</td>
+            </tr>
+            <tr>
+                <td>XR</td>
+                <td>=</td>
+                <td>M-101-AK</td>
+            </tr>
+            <tr>
+                <td>MA</td>
+                <td>=</td>
+                <td>HANS HANSEN</td>
+            </tr>
+            <tr>
+                <td>DA</td>
+                <td>=</td>
+                <td>20090930</td>
+            </tr>
+            <tr>
+                <td>TI</td>
+                <td>=</td>
+                <td>2300</td>
+            </tr>
+            <tr>
+                <td>QI</td>
+                <td>=</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>AC</td>
+                <td>=</td>
+                <td>FIS</td>
+            </tr>
+            <tr>
+                <td>RE</td>
+                <td>=</td>
+                <td>Feltet skal være blankt ved første gangs sending av meldingen. Ved korrigering av en tidligere sendt melding må det sendes inn en kopi av selve meldingen hvor RE feltet er angitt med koden 511 for korrigering</td>
+            </tr>
+            <tr>
+                <td>MV</td>
+                <td>=</td>
+                <td>1 dersom det er originalmeldingen, videre økes dette nr med en for hver ny korrigerings versjon.</td>
+            </tr>
+            <tr>
+                <td>PO</td>
+                <td>=</td>
+                <td>Blank hvis fisket ikke er avsluttet ellers NOBGO eller Bergen i klar tekst hvis kode ikke er tilgjengelig.</td>
+            </tr>
+        </table><br>
+
+        Blokk B gjentas en for hver fiskeoperasjon
+        <table class="veildning">
+            <thead>
+                <tr>
+                    <th colspan="3">Blokk B, fiskeoperasjon</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>BD</td>
+                <td>=</td>
+                <td>20090930</td>
+            </tr>
+            <tr>
+                <td>BT</td>
+                <td>=</td>
+                <td>0130</td>
+            </tr>
+            <tr>
+                <td>ZO</td>
+                <td>=</td>
+                <td>NOR</td>
+            </tr>
+            <tr>
+                <td>LT</td>
+                <td>=</td>
+                <td>64,790</td>
+            </tr>
+            <tr>
+                <td>LG</td>
+                <td>=</td>
+                <td>9,041</td>
+            </tr>
+            <tr>
+                <td>GE</td>
+                <td>=</td>
+                <td>OTB</td>
+            </tr>
+            <tr>
+                <td>GS</td>
+                <td>=</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>ME</td>
+                <td>=</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td>GP</td>
+                <td>=</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>XT</td>
+                <td>=</td>
+                <td>65,010</td>
+            </tr>
+            <tr>
+                <td>XG</td>
+                <td>=</td>
+                <td>8,901</td>
+            </tr>
+            <tr>
+                <td>DU</td>
+                <td>=</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <td>TF</td>
+                <td>=</td>
+                <td>LLMF</td>
+            </tr>
+            <tr>
+                <td>SS</td>
+                <td>=</td>
+                <td>Blank hvis det ikke er fisket etter sild</td>
+            </tr>
+            <tr>
+                <td>CA</td>
+                <td>=</td>
+                <td>TORSK 500, HYSE 100</td>
+            </tr>
+            
+        </table><br>
+
+        Blokk B gjentas for hver fangstoperasjon. Dersom du fanger hval, skal Blokk B se slik ut:
+        <table class="veildning">
+            <thead>
+                <tr>
+                    <th colspan="3">Blokk B, fangstoperasjon</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>BD</td>
+                <td>=</td>
+                <td>20090930</td>
+            </tr>
+            <tr>
+                <td>BT</td>
+                <td>=</td>
+                <td>0130</td>
+            </tr>
+            <tr>
+                <td>ZO</td>
+                <td>=</td>
+                <td>NOR</td>
+            </tr>
+            <tr>
+                <td>LT</td>
+                <td>=</td>
+                <td>64,790</td>
+            </tr>
+            <tr>
+                <td>LG</td>
+                <td>=</td>
+                <td>9,041</td>
+            </tr>
+            <tr>
+                <td>GE</td>
+                <td>=</td>
+                <td>HAR</td>
+            </tr>
+            <tr>
+                <td>GP</td>
+                <td>=</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>XT</td>
+                <td>=</td>
+                <td>65,010</td>
+            </tr>
+            <tr>
+                <td>XG</td>
+                <td>=</td>
+                <td>8,901</td>
+            </tr>
+            <tr>
+                <td>DU</td>
+                <td>=</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <td>TF</td>
+                <td>=</td>
+                <td>LLMF</td>
+            </tr>
+            <tr>
+                <td>CA</td>
+                <td>=</td>
+                <td>Vågehval 2100</td>
+            </tr>
+            <tr>
+                <td>IN</td>
+                <td>=</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>SE</td>
+                <td>=</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>LE</td>
+                <td>=</td>
+                <td>670</td>
+            </tr>
+            <tr>
+                <td>CI</td>
+                <td>=</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>BM</td>
+                <td>=</td>
+                <td>A35 B142 C38</td>
+            </tr>
+            <tr>
+                <td>GN</td>
+                <td>=</td>
+                <td>12-0050</td>
+            </tr>
+            <tr>
+                <td>LF</td>
+                <td>=</td>
+                <td>60</td>
+            </tr>
+        </table>
+    
+        <h2>MELDING OM HAVNEANLØP (POR)</h2>
+        Manuell melding om havneanløp skal utformes slik:
+        <ul>
+            <li><b>Eksempel 1: Når fangst skal landes</b><br>Som under</li>
+            <li><b>Eksempel 2: Når fangst ikke skal leveres.</b><br> Som under, med unntak av KG = 0.</li>
+        </ul> 
+        <table class="veildning">
+            <tr>
+                <td>TM</td>
+                <td>=</td>
+                <td>POR</td>
+            </tr>
+            <tr>
+                <td>RN</td>
+                <td>=</td>
+                <td>Oppgis som om meldingen hadde vært sendt elektronisk ellers skrives ordet UKJENT
+                </td>
+            </tr>
+            <tr>
+                <td>SQ</td>
+                <td>=</td>
+                <td>Dersom SQ ikke er i bruk settes linjen blank. Dersom SQ er i bruk oppgis det som om meldingen ville vært sendt elektronisk ellers skrives ordet UKJENT</td>
+            </tr>
+            <tr>
+                <td>RC</td>
+                <td>=</td>
+                <td>RADIO50</td>
+            </tr>
+            <tr>
+                <td>NA</td>
+                <td>=</td>
+                <td>KONTIKI</td>
+            </tr>
+            <tr>
+                <td>XR</td>
+                <td>=</td>
+                <td>M-101-AK</td>
+            </tr>
+            <tr>
+                <td>MA</td>
+                <td>=</td>
+                <td>HANS HANSEN</td>
+            </tr>
+            <tr>
+                <td>DA</td>
+                <td>=</td>
+                <td>20091001</td>
+            </tr>
+            <tr>
+                <td>TI</td>
+                <td>=</td>
+                <td>0830</td>
+            </tr>
+            <tr>
+                <td>PO</td>
+                <td>=</td>
+                <td>NOAES eller ÅLESUND i klar tekst dersom kode ikke er tilgjengelig</td>
+            </tr>
+            <tr>
+                <td>LS</td>
+                <td>=</td>
+                <td>Brødrene Olsen sin kai</td>
+            </tr>
+            <tr>
+                <td>PD</td>
+                <td>=</td>
+                <td>20091001</td>
+            </tr>
+            <tr>
+                <td>PT</td>
+                <td>=</td>
+                <td>1100</td>
+            </tr>
+            <tr>
+                <td>KG</td>
+                <td>=</td>
+                <td>TORSK 65000, HYSE 14000</td>
+            </tr>
+            <tr>
+                <td>OB</td>
+                <td>=</td>
+                <td>TORSK 100000, HYSE 14000</td>
+            </tr>
+            <tr>
+                <td>RE</td>
+                <td>=</td>
+                <td>Feltet skal være blankt ved første gangs sending av meldingen. Ved kansellering av en tidligere sendt melding må det sendes inn en kopi av selve meldingen hvor RE feltet er angitt med koden 521 for kansellering</td>
+            </tr>
+        </table>
+
+        <h2>Omlastningsmelding (TRA)</h2>
+        Manuell melding om omlasting skal utformes slik:
+        <ul>
+            <li><b>Eksempel 1 (Når fangst er omlastet fra et annet fartøy):</b><br>Som under</li>
+            <li><b>Eksempel 2 (Når fangst er omlastet til et annet fartøy):</b><br>Som under, men TF erstattes med TT og radiokallesignalet til fartøyet fangst er omlastet til.</li>
+        </ul>
+
+        <table class="veildning">
+            <tr>
+                <td>TM</td>
+                <td>=</td>
+                <td>POR</td>
+            </tr>
+            <tr>
+                <td>RN</td>
+                <td>=</td>
+                <td>Oppgis som om meldingen hadde vært sendt elektronisk ellers skrives ordet UKJENT
+                </td>
+            </tr>
+            <tr>
+                <td>SQ</td>
+                <td>=</td>
+                <td>Dersom SQ ikke er i bruk settes linjen blank. Dersom SQ er i bruk oppgis det som om meldingen ville vært sendt elektronisk ellers skrives ordet UKJENT</td>
+            </tr>
+            <tr>
+                <td>RC</td>
+                <td>=</td>
+                <td>RADIO50</td>
+            </tr>
+            <tr>
+                <td>NA</td>
+                <td>=</td>
+                <td>KONTIKI</td>
+            </tr>
+            <tr>
+                <td>XR</td>
+                <td>=</td>
+                <td>M-101-AK</td>
+            </tr>
+            <tr>
+                <td>MA</td>
+                <td>=</td>
+                <td>HANS HANSEN</td>
+            </tr>
+            <tr>
+                <td>DA</td>
+                <td>=</td>
+                <td>20090930</td>
+            </tr>
+            <tr>
+                <td>TI</td>
+                <td>=</td>
+                <td>0600</td>
+            </tr>
+            <tr>
+                <td>OB</td>
+                <td>=</td>
+                <td>TORSK 100000, HYSE 14000</td>
+            </tr>
+            <tr>
+                <td>KG</td>
+                <td>=</td>
+                <td>TORSK 10000</td>
+            </tr>
+            <tr>
+                <td>TF</td>
+                <td>=</td>
+                <td>RADIO60</td>
+            </tr>
+            <tr>
+                <td>LA</td>
+                <td>=</td>
+                <td>N6130</td>
+            </tr>
+            <tr>
+                <td>LO</td>
+                <td>=</td>
+                <td>E00400</td>
+            </tr>
+            <tr>
+                <td>PD</td>
+                <td>=</td>
+                <td>20090930</td>
+            </tr>
+            <tr>
+                <td>PT</td>
+                <td>=</td>
+                <td>1430</td>
+            </tr>
+            <tr>
+                <td>RE</td>
+                <td>=</td>
+                <td>Feltet skal være blankt ved første gangs sending av meldingen. Ved kansellering av en tidligere sendt melding må det sendes inn en kopi av selve meldingen hvor RE feltet er angitt med koden 521 for kansellering</td>
+            </tr>
+        </table>
+    </body>
+</html>

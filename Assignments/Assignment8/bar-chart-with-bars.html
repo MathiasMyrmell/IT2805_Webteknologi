@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tax forms: Bar chart with lines</title>
+    <meta charset="UTF-8">
+    <script src="taxForms.js"></script>
+  </head>
+  <body>
+
+    <canvas id="chart" width="700" height="800"></canvas>
+
+    <script>
+      const canvas = document.getElementById('chart');
+      const context = canvas.getContext('2d');
+       
+      /* Draw a line from (fromX, fromY) to (toX, toY) */
+      function drawLine(fromX, fromY, toX, toY) {
+        context.beginPath();
+        context.moveTo(toX, toY);
+        context.lineTo(fromX, fromY);
+        context.stroke();
+      }
+
+      /* Draw a text (string) on (x, y) */
+      function drawText(text, x, y) {
+        context.fillStyle = 'black';
+        context.fillText(text, x, y);
+      }
+
+      /* Draw a text and with a line to its right */
+      function drawLineWithText(text, fromX, fromY, toX, toY) {
+        drawText(text, fromX - 50, fromY + 10);
+        drawLine(fromX, fromY, toX, toY);
+      }
+
+      /* Insert your code here. */
+
+      // draw chart
+      drawLineWithText('1 000 000', 100, 100, 500, 100);
+      drawLineWithText('900 000', 100, 150, 500, 150);
+      drawLineWithText('800 000', 100, 200, 500, 200);
+      drawLineWithText('700 000', 100, 250, 500, 250);
+      drawLineWithText('600 000', 100, 300, 500, 300);
+      drawLineWithText('500 000', 100, 350, 500, 350);
+      drawLineWithText('400 000', 100, 400, 500, 400);
+      drawLineWithText('300 000', 100, 450, 500, 450);
+      drawLineWithText('200 000', 100, 500, 500, 500);
+      drawLineWithText('100 000', 100, 550, 500, 550);
+      
+      // labeltext
+      drawText('Income', 570, 115);
+      drawText('Wealth', 570, 145);
+      
+      // labelboxes
+      // income box
+      context.fillStyle = 'red';
+      context.fillRect(510, 100, 50, 20);
+      // wealth box
+      context.fillStyle = 'blue';
+      context.fillRect(510, 130, 50, 20);
+      
+      
+      // zero line
+      context.moveTo(100, 580);
+      context.lineTo(500, 580);
+      context.stroke();
+      
+      // calculates the height of the bars
+      function calcBarValue(value){
+        if(value<100000){
+            return 0;
+        }
+        var x = -30-50*(value-100000)/100000;
+        return x;
+      }
+
+      // draw a bar
+      function drawBar(value, color, x){
+        context.fillStyle = color;
+        context.fillRect(x, 580, 50, calcBarValue(value));
+      }
+
+      //display name of person
+      function displayName(name, x){
+        context.fillStyle = 'black';
+        context.fillText(name, x, 600);
+      }
+
+      //draw a bar pair
+      function drawBarPair(income, wealth, x){
+        drawBar(income, 'red', x);
+        drawBar(wealth, 'blue', x+55);
+      }
+
+      //display values from taxForms.js
+      for(var i = 0; i < taxForms.length; i++) {
+        drawBarPair(taxForms[i].income, taxForms[i].wealth, 100+125*i);
+        displayName(taxForms[i].realName, 130+125*i);
+      }
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(229, 228, 228);
+}
+
+h1{
+    font-family: Arial;
+}
+
+h2{
+    font-family: Arial;
+}
+
+p{
+    font-family: 'Space Mono', Arial;
+}
+
+#me{
+    max-width: 150px;
+    padding: 2px;
+    border: solid 5px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <title>Tax form</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="https://folk.ntnu.no/anderobs/webtek/receive_form.php" method="post" name="taxform">
+            <fieldset>
+                <legend>Taxform</legend>
+                <label for="name">Real name:</label>
+                    <input type="text" id="name" name="name" required>
+                <br>
+                <label for="gender">Gender:</label>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                <br>
+                <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                <br>
+                <label for="birthdate">Birthdate:</label>
+                    <input type="date" id="birthdate" name="birthdate" max='1988-12-31' required>
+                <br>
+                <label for="heroname"> Hero name:</label>
+                    <input type="text" id="heroname" name="heroname" required>
+                <br>
+                <label for="spandex">Do you wear spandex?</label>
+                <select name="spandex" id="spandex">
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </select>
+            <br>
+                <br>
+                <label for="strength">Strength:</label>
+                    <input type="number" id="strength" name="strength" min="1" max="10" required>
+                <br>
+                <label for="speed">Speed:</label>
+                    <input type="number" id="speed" name="speed" min="1" max="10" required>
+                <br>
+                <label for="intelligence">Intelligence:</label>
+                    <input type="number" id="intelligence" name="intelligence" min="1" max="10" required>
+                <br>
+                <label for="income">Income:</label>
+                    <input type="number" id="income" name="income" min="0" oninput=calculate() required>
+                <br>
+                <label for="wealth">Wealth:</label>
+                    <input type="number" id="wealth" name="wealth" min="0" oninput=calculate() required>
+                <br>
+                <label for="tax">Tax:</label>
+                    <input type="number" id="tax" name="tax" disabled>
+            <button>
+                Submit tax form
+            </button>
+        </fieldset>
+        </form>
+        <script src="tax.js"></script>
+    </body>
+</html>

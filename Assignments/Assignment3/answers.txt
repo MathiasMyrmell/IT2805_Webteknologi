@@ -1,0 +1,7 @@
+1. position: absolute lets you place the object at a specific place in relation to its parent element.
+It is not affected by other elements on the page.
+position: fixed lets you place an element in relation to the wievport.
+This will not be affected when scrolling for example.
+The difference between these two are the position they are relative to. One is relative to its parent element, and the other is the viewport.
+
+2. parent-element:nth-child(3){};

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang = "nb">
+    <head>
+        <title>Fangstdagbok - SailorsMate</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="icon" href="../img/favicon.png">
+    </head>
+    <body >
+        <div class="page" >
+            <div id="navbar"></div>
+            <div id="content">
+                <div id="page-container">
+                    <div class="grid-item" id="info">
+                        <h1>Fangstdagbok og sporing</h1>
+                            <h2>Fangstdagbok (ERS)</h2>
+                                <p>SailorsMate leverer fangstdagbok. Denne vil kunne betjenes direkte i SailorsMate/plotter. 
+                                    Dersom du ikke har SailorsMate/plotter vil du kunne kjøre vår fangstdagbok fra et nettbrett (levert fra oss).
+                                    Fangstdagbok vil koste 350,- pr. mnd, for de månedene du bruker fangstdagboken. Vi prøver å lage produktet enkelt, 
+                                    effektivt og rimelig. Mer info og bilder kommer.<br>
+                                    Veiledninger:
+                                </p>
+                                <ul>
+                                    <li><button class="linkguidance" onclick="toggleGuidance('redirect','fiskeridirektoratet')">Forskrift fra fiskeridirektoratet</button></li>
+                                    <li><button class="linkguidance" onclick="toggleGuidance('show','forskrift')">Forenklet forskrift for fiskeri i norsk sone (gjelder ikke tarefiske)</button></li>
+                                    <li><button class="linkguidance" onclick="toggleGuidance('show','sporsmal')">Ofte spurte spørsmål</button></li>
+                                    <li><button class="linkguidance" onclick="toggleGuidance('show','vedfeil')">Ved feil</button></li>
+                                    <li><button class="linkguidance" onclick="toggleGuidance('show','forkortelser')">Forkortelser</button></li>
+                                </ul>
+                            <h2>Sporing (VMS) - leverandører som samarbeider tett med SailorsMate</h2>
+                                <table class="sporing">
+                                    <thead>
+                                        <tr class="sporing">
+                                            <th class="sporing">Leverandør</th>
+                                            <th class="sporing">Produkt</th>
+                                            <th class="sporing">Pris for utstyr</th>
+                                            <th class="sporing">Pris hver måned</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td class="sporing">Polaris electronics</td>
+                                        <td class="sporing">Sirius-ONE</td>
+                                        <td class="sporing" style="text-align: right;">16 000,-</td>
+                                        <td class="sporing" style="text-align: right;">Fra 220,-</td>
+                                    </tr>
+                                </table>
+                                <p>Sirius-ONE er litt dyrere i innkjøp, men har et <b>mye</b> rimerligere abonement! Lønner seg etter kort tid.</p>
+                            <h2>Sporing (VMS) - leverandører som samarbeider tett med SailorsMate</h2>
+                                <p>Meldingene fra fangstdagboken kan sendes over båtens internett. Dersom du kun opererer innenfor gsm-området, kan du kombinere vår fangstdagbok med sporing fra feks:</p>
+                                <table class="sporing">
+                                    <thead>
+                                        <tr class="sporing">
+                                            <th class="sporing">Leverandør</th>
+                                            <th class="sporing">Produkt</th>
+                                            <th class="sporing">Pris for utstyr</th>
+                                            <th class="sporing">Pris hver måned</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td class="sporing">Brommeland AS</td>
+                                        <td class="sporing">BE LookOut</td>
+                                        <td class="sporing" style="text-align: right; background-color:rgba(255, 255, 0, 0.7)">11.950,-</td>
+                                        <td class="sporing" style="text-align: right; background-color:rgba(255, 255, 0, 0.7)">249,-</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sporing">Fangstr</td>
+                                        <td class="sporing">VMS kyst med backup</td>
+                                        <td class="sporing" style="text-align: right; background-color:rgba(255, 255, 0, 0.7)">7.990,-</td>
+                                        <td class="sporing" style="text-align: right; background-color:rgba(255, 255, 0, 0.7)">290,-</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sporing">Marine dynamics</td>
+                                        <td class="sporing">proff 30</td>
+                                        <td class="sporing" style="text-align: right; background-color:rgba(255, 255, 0, 0.7)">13.490,-</td>
+                                        <td class="sporing" style="text-align: right; background-color:rgba(255, 255, 0, 0.7)" >349,-</td>
+                                    </tr>
+                                    
+                                </table>
+                                <p>Gule priser er ikke verifisert<br>
+                                    Alle priser ovenfor er eksl. mva.</p>
+                    </div>
+                    <div class="grid-item" id="guidance" style="display:none"></div>
+                    
+                  </div>
+               
+            </div>
+            <div id="footer">footer</div>
+          </div>
+          <script src="../javascript/commonFunctions.js"></script>
+    </body>
+</html>

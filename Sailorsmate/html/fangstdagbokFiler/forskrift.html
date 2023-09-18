@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button id="commonButton" onclick="toggleGuidance('hide','content')">Lukk &#10006;</button>
+        <h1>Forskrift om elektronisk rapportering</h1>
+        <p>Forskriften finnes på <a href="https://www.fiskeridir.no/Yrkesfiske/Regelverk-og-reguleringer/J-meldinger/Gjeldende-J-meldinger/J-133-2022" target="_blank">fiskeridirektoratet sine sider</a>. Her gis en forenklet og lett lesbar versjon som er relevant for mindre båter.</p>
+        <h2>Formål</h2>
+        Elektronisk rapportering skal bidra til en effektiv regulering av fiskeriene, 
+        bedre kontroll med ressursuttaket og et bedre grunnlag for statistikk og forskning.
+
+        <h2>Returmelding ved elektronisk rapportering</h2>
+        Etter innsendt melding, vil fiskeridirektoratet bekrefte mottak med en returmelding. 
+        Dersom meldingen godtas returneres <b>ACK (Acknowledged)</b>. Dersom meldingen ikke godtas returneres, returneres <b>NAK (Not acknowledged)</b>.<br><br>
+        Meldingene er ikke gyldige før du har mottatt ACK.
+
+        <h2>Virkeområde for elektronisk rapportering</h2>
+        Fangstdagboken skal alltid anvendes ved fiske (eller når du har fisk ombord). Dersom du feks. skal ha båten på slip, trenger du ikke å bruke fangstdagbok.
+        
+        <h2>Melding om havneavgang (DEP)</h2>
+        Melding om havneavgang skal sendes før du kaster loss. Husk: ikke skal kast loss før du har fått ACK på meldingen.
+        Innholdet i meldingen kommer fram fra fangstdagboken, men du skal angi mengde fisk ombord og når/hvor/hva du skal fiske.
+
+        <h2>Melding om fangst (DCA)</h2>
+        Etter at havneavgang (DEP) melding er sendt, skal melding om fangst (DCA) skal sendes. 
+        Meldingen skal sendes minst én gang daglig og senest klokken 23.59 UTC (Coordinated Universal Time). 
+        Dette skal gjøres inntil du har sendt havneankomst (POR) melding, selv om du ikke har fisket.<br><br>
+
+        Meldingen skal også sendes
+        <ul>
+            <li>når Fiskeridirektoratet eller Kystvakten krever det, ved inspeksjon på sjø,</li>
+            <li>samme dag og før fartøyet går inn i internasjonalt farvann eller annet lands sone,</li>
+            <li>samme dag og før melding om avslutning av fiske (COX) er sendt.</li>
+        </ul>
+        Etter at fisket er avsluttet og melding om havneanløp (POR) er sendt, opphører plikten til å sende melding om fangst.<br><br>
+        Innholdet i meldingen kommer fram fra fangstdagboken, men du skal angi mengde fanget fisk og når/hvor du fisket og hvor du tenker å levere.
+
+
+        <h2>Opplysninger i blokk B (info om hvert hal).</h2>
+
+        Det ønskes å vite hvor lenge redskapen har fisket. Tiden skal angis fra det redskapen går i vannet til det er tatt opp av sjøen.<br><br>
+        Fartøy som fisker med garn, line, teiner eller høster tare kan angi opplysningene i blokk B per døgn. Spesielle regler for fartøy som høster tare.<br><br>
+
+        Fartøy under 15 meter største lengde som fisker med trål, snurrevad eller notredskap i norske farvann kan angi opplysningene i blokk B per døgn. 
+        Dette gjelder ikke fartøy som skal rapportere til Havforskningsinstituttet eller fartøy på eller over 12 meter største lengde 
+        som fisker med trål utenfor 4 nautiske mil fra grunnlinjene i Skagerrak, avgrenset mot vest av en rett linje gjennom Lindesnes fyr og 
+        Hanstholmen fyr og mot sør av en rett linje gjennom Skagen fyr og Tistlarna fyr.<br><br>
+
+        Dersom fiskeriaktivitet angis som SET skal blokk B ikke rapporteres. Blokk B rapporteres når redskapet tas opp.
+
+        <h2>Melding om havneanløp (POR)</h2>
+        Det skal sendes melding om havneanløp (POR) senest 2 timer før anløp til havn. 
+        Dersom siste fiskeoperasjon avsluttes nærmere havn enn 2 timer, skal melding sendes snarest mulig og før anløp havn.<br><br>
+        Spesielle regler for fartøy som fisker tare, se forskrift.<br><br>
+
+        Dersom fangsten skal leveres i flere havner, sendes POR melding for hver landing. 
+        Det er ikke nødvendig å sende andre meldinger dersom det ikke gjennomføres fangstoperasjoner.<br><br>
+        Fartøy som har mottatt fangst fra annet fartøy skal sende melding om havneanløp (POR) senest 24 timer før landing i norsk havn.<br><br>
+        Innholdet i meldingen kommer fram fra fangstdagboken. I tillegg til hvor mye fisk du skal levere, 
+        rapporteres hvor mye fisk du har ombord (dette finner du på knappen "ombord").
+
+        <h2>Adgang til å korrigere og kansellere meldinger</h2>
+        Melding om fangst (DCA) kan korrigeres frem til klokken 12.00 UTC dagen etter og før melding om havneanløp (POR) er sendt.<br><br>
+        Melding om havneavgang (DEP), havneanløp (POR) og omlasting (TRA) kan kanselleres.
+
+        <h2>Tekniske feil og feil med kommunikasjonslinjene</h2>
+        Dersom det oppstår teknisk feil i de elektroniske rapporteringssystemene skal fartøyene:
+        <ul>
+            <li>Føre meldinger manuelt og sende dem via e-post til Fiskeridirektoratet innen ordinær tidsfrist.</li>
+            <li>Dersom det oppstår feil med kommunikasjonslinjene, som umuliggjør innsending av posisjonsrapporter og meldinger, 
+                skal de skrives ut eller føres manuelt og sendes via e-post til Fiskeridirektoratet innen ordinær tidsfrist.
+            </li>
+            <li>Posisjonsrapportene og meldingene skal også lagres i rapporteringssystemet for sending når kommunikasjonslinjene 
+                eller de elektroniske rapporteringssystemene fungerer.
+            </li>
+        </ul>
+
+        <h2>Krav til utbedring av feil</h2>
+        Dersom det har oppstått feil slik at kravene ikke kan oppfylles, kan ikke fartøyet starte fisket på nytt uten reparasjon 
+        eller dispensasjon fra Fiskeridirektoratet.<br><br>
+        Dersom det oppstår feil ved fartøyets elektroniske rapporteringsutstyr mens fartøyet er på fiskefeltet må utstyret 
+        repareres eller erstattes så snart fartøyet kommer til havn.<br><br>
+    </body>
+</html>

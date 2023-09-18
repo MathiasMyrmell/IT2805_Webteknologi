@@ -1,0 +1,7 @@
+1. Inline CSS is the most specific, and will override external CSS. The only way to override inline CSS with external CSS, is to use !important.
+2. We use .class when there are many occurrences, like <p>. #id is more suitable when we want to change specific objects, like pictures.
+3. RGBA stands for Red, Green, Blue and Alpha, and it is a colour model. With RGBA, you can represent every colour that can be made with the primary colours, but in addition the alpha value determines the opacity.
+4. We include the CSS files in the head element so these files will be loaded before anything else.
+5. To ways to reach the specific <p> tags is:
+    Al1: article p{…}
+    Alt2: article>p{…}

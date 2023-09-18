@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button id="commonButton" onclick="toggleGuidance('hide','content')">Lukk &#10006;</button>
+        <h1>Forkortelser</h1>
+        Det brukes en del forkortelser i forbindelse med elektronisk fangstdagbok.<br>
+        Her gis noen foklaringer:<br><br>
+        <table class="veildning">
+            <thead>
+                <tr>
+                    <th colspan="2">Meldingstyper</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>DEP</td>
+                <td>Melding om avgang fra havn</td>
+            </tr>
+            <tr>
+                <td>DCA</td>
+                <td>Fangst melding</td>
+            </tr>
+            <tr>
+                <td>POR</td>
+                <td>Melding om ankomst havn</td>
+            </tr>
+            <tr>
+                <td>TRA</td>
+                <td>Melding om overførsel</td>
+            </tr>
+            <tr>
+                <td>COE</td><td>Melding om fiskestart (kun for fiske i
+            fiskevernsonen ved Svalbard)</td>
+        </tr>
+            <tr>
+                <td>COX</td>
+                <td>Melding om avslutning av fisket (kun for fiske
+                    i fiskevernsonen ved Svalbard)</td>
+        </tr>
+        </table>
+        <br>
+        <table class="veildning">
+            <thead>
+                <tr>
+                    <th colspan="2">Redskapsproblemer</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>bomkast</td>
+                <td>normalt fiskeoperasjon, men ingen fangst</td>
+            </tr>
+            <tr>
+                <td>notsprenging</td>
+                <td> noten brast pga. feks. mye fisk</td>
+            </tr>
+            <tr>
+                <td>splitt</td>
+                <td>noten er splittet / rivet i sund, pga. feks.
+            trålsatt seg fast i bunnen</td>
+            </tr>
+            <tr>
+                <td>hull i sekk</td>
+                <td>feks. stein i sekk som lager hull som
+            fisk kan rømme gjennom</td>
+            </tr>
+            <tr>
+                <td>mistet redskap</td>
+                <td>redskap mistet i sjøen</td>
+            </tr>
+            <tr>
+                <td>annet</td>
+                <td>andre problemer</td>
+            </tr>
+            <tr>
+                <td>bomskudd hval</td>
+                <td>harpun avfyrt, men traff ikke hval</td>
+            </tr>
+            <tr>
+                <td>tapt hval</td>
+                <td>hval var fanget, men mistet under feks. inhaling</td>
+            </tr>
+            <tr>
+                <td>ingen redskaps problem</td>
+                <td>ingen redskaps problem, normal situasjon</td>
+            </tr>
+        </table>
+        <br>
+        <table class="veildning">
+            <thead>
+                <tr>
+                    <th colspan="2">Fiskeriaktivitet
+                    </th>
+                </tr>
+            </thead>
+            <tr>
+                <td>FIS</td>
+                <td>FIS skal anvendes når det er gjennomført <b>fis</b>keoperasjoner innenfor døgnet det rapporteres for.</td>
+            </tr>
+            <tr>
+                <td>REL</td>
+                <td>REL skal anvendes av det fartøy som pumper om bord fangst fra sjøen fisket av et annet fartøy. Det skal sendes en egen DCA melding dersom det er pumpet fra et annet fartøys redskap.</td>
+            </tr>
+            <tr>
+                <td>SCR</td>
+                <td>SCR skal anvendes av fartøy som driver vitenskapelig forskning innenfor døgnet det rapporteres for.</td>
+            </tr>
+            <tr>
+                <td>STE</td>
+                <td>STE skal anvendes dersom fartøyet ikke har gjennomført fiskeoperasjoner innenfor døgnet det rapporteres for.</td>
+            </tr>
+            <tr>
+                <td>TRX</td>
+                <td>TRX skal anvendes av fartøy som tar del i omlasting innenfor døgnet det rapporteres for, og som for øvrig ikke har gjennomført fiskeoperasjoner innenfor dette døgnet.</td>
+            </tr>
+            <tr>
+                <td>SET</td>
+                <td>SET skal anvendes av fartøy som fisker med garn eller line i Norges økonomiske sone og territorialfarvann, og som kun skal sette redskap innenfor døgnet det rapporteres for.</td>
+            </tr>
+            <tr>
+                <td>ANC</td>
+                <td>ANC kan anvendes når fartøyet ligger forankret i sjø.</td>
+            </tr>
+            <tr>
+                <td>DRI</td>
+                <td>DRI kan anvendes når fartøyet driver.</td>
+            </tr>
+            <tr>
+                <td>GUD</td>
+                <td>GUD kan anvendes dersom fartøyet opptrer som vaktskip.</td>
+            </tr>
+            <tr>
+                <td>HAU</td>
+                <td>HAU kan anvendes når fartøyet er i transport.</td>
+            </tr>
+            <tr>
+                <td>PRO</td>
+                <td>PRO kan anvendes når fartøyet produserer.</td>
+            </tr>
+            <tr>
+                <td>INW</td>
+                <td>INW kan anvendes når det ikke er fiskeriaktivitet på grunn av værforhold</td>
+            </tr>
+            <tr>
+                <td>SEF</td>
+                <td>SEF kan anvendes når fartøyet leter etter fisk uten at redskapet er i vann</td>
+            </tr>
+            <tr>
+                <td>OTH</td>
+                <td>Annet</td>
+            </tr>
+        </table>
+        <br>
+        <table class="veildning">
+            <thead>
+                <tr>
+                    <th colspan="2">Angivelse av soner</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>NOR</td>
+                <td>Norges økonomiske sone</td>
+            </tr>
+            <tr>
+                <td>XSV</td>
+                <td>Fiskevernsonen ved Svalbard </td>
+            </tr>
+            <tr>
+                <td>XSI</td>
+                <td>Svalbards territorialfarvann </td>
+            </tr>
+            <tr>
+                <td>XJM</td>
+                <td>Fiskerisonen ved Jan Mayen </td>
+            </tr>
+            <tr>
+                <td>XSK</td>
+                <td>Skagerrak</td>
+            </tr>
+            <tr>
+                <td>XEU</td>
+                <td>EU-sonen</td>
+            </tr>
+            <tr>
+                <td>RUS</td>
+                <td> Russisk sone</td>
+            </tr>
+            <tr>
+                <td>GRL</td>
+                <td>Grønlandsk sone</td>
+            </tr>
+            <tr>
+                <td>FRO</td>
+                <td>Færøysk sone</td>
+            </tr>
+            <tr>
+                <td>ISL</td>
+                <td>Islandsk sone</td>
+            </tr>
+            <tr>
+                <td>XNE</td>
+                <td>NEAFC-området </td>
+            </tr>
+            <tr>
+                <td>XNW</td>
+                <td>NAFO-området</td>
+            </tr>
+            <tr>
+                <td>XCA</td>
+                <td>CCAMLR-området</td>
+            </tr>
+        </table>
+        <script src="../javascript/button.js"></script>
+    </body>
+</html>

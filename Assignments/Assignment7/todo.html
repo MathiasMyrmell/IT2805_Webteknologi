@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Todo List</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                justify-content: center;
+                align-content: center;
+                display: grid;
+                height: 100vh;
+                
+            }
+            #toDoList{
+                border: 3px solid black;
+                padding: 15px;
+            }
+            ul{
+                padding: 5px;
+            }
+            ul >li{
+                list-style-type: none;
+            }
+            #taskcontainer{
+                width: 300px;
+                height: 300px;
+                border: 1px solid black;
+                overflow: auto;
+                overflow: scroll;
+            }
+            #message{
+                height: 20px;
+            }
+            
+            #task{
+                width: 250px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="toDoList">
+        <h1>Todo List</h1>
+        <h2>Add task</h2>
+        <label>
+            <input type="text" name="task" id="task">
+        </label>
+        <button onclick="addTask()">Add</button>
+        <h2>Tasks</h2>
+        <div id="message" ></div>
+        <div id="taskcontainer">
+            <ul id="tasks"></ul>
+        </div>
+    </div>
+    <script src="todo.js" rel="import"></script>
+    </body>
+</html>

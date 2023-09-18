@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <title>Forhandlere - SailorsMate</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../img/favicon.png">
+  </head>
+  <body>
+    <div class="page">
+      <div id="navbar"></div>
+      <div id="content">
+        <div id="retailer-container">
+        <h1>Forhandlere</h1>
+        <p>
+          Kontakt oss gjerne om du er interessert i SailorsMate. Vi har utviklet
+          programmet og kjenner mulighetene. Vi holder for tiden på å bygge et
+          nettverk av forhandlere. Så langt er vi tilknyttet forhandlerne listet
+          under. (Klikk på listen for å se lokasjonene)
+        </p>
+        <div id="retailer_list">
+          <table id="retailersTableID">
+            <thead>
+              <tr>
+                <th>Forhandler</th>
+                <th>Telefon</th>
+                <th>Sted</th>
+                <th>Nettside</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Brommeland Elektronikk</td>
+              <td>99 33 15 00</td>
+              <td>Haugesund</td>
+              <td><a href="https://www.brommeland.no/">brommeland.no</a></td>
+            </tr>
+            <tr >
+              <td>Høcom Norge</td>
+              <td>91 55 63 00</td>
+              <td>Bergen</td>
+              <td><a href="https://www.hocom.no/">hocom.no</a></td>
+            </tr>
+            <tr>
+              <td>IF-Elektro</td>
+              <td>47 01 25 00</td>
+              <td>Leinøy</td>
+              <td><a href="https://www.if-elektro.no/">if-elektro.no</a></td>
+            </tr>
+            <tr>
+              <td>Moltech</td>
+              <td>70 10 28 80</td>
+              <td>Ålesund</td>
+              <td><a href="https://www.moltech.no/">moltech.no</a></td>
+            </tr>
+            <tr>
+              <td>Florvaag elektronikk</td>
+              <td>95 46 31 05</td>
+              <td>Ålesund</td>
+              <td><a href="https://www.florvaag.no/">florvaag.no</a></td>
+            </tr>
+            <tr>
+              <td>Pedersen Consulting</td>
+              <td>95 36 27 50</td>
+              <td>Sandhornøy</td>
+              <td><a href="http://pedersenconsult.no//">pedersenconsult.no</a></td>
+            </tr>
+            <tr>
+              <td>Elektro Bodø</td>
+              <td>95 05 28 60</td>
+              <td>Bodø</td>
+              <td><a href="https://elektro.no/">elektro.no</a></td>
+            </tr>
+            <tr>
+              <td>Ramotech</td>
+              <td>95 07 12 81</td>
+              <td>Bodø</td>
+              <td><a href="https://ramotech.no/produktkategori/sailorsmate/">ramotech.no</a></td>
+            </tr>
+            <tr>
+              <td>Hibotech</td>
+              <td>47 68 58 33</td>
+              <td>Svolvær</td>
+              <td><a href="https://www.hibotech.no/">hibotech.no</a></td>
+            </tr>
+            <tr>
+              <td>Lofoten elektro</td>
+              <td>94 78 36 58</td>
+              <td>Svolvær</td>
+              <td><a href="https://www.lofotenelektro.no/">lofotenelektro.no</a></td>
+            </tr>
+          </table>
+        </div>
+        <div class="mapouter">
+          <p id="selected_retailer">
+            Sailorsmate
+          </p>
+          <div class="gmap_canvas">
+              <iframe 
+                  width="700" 
+                  height="700" 
+                  id="gmap_canvas" 
+                  src="https://maps.google.com/maps?q=Sailorsmate&t=&z=5&ie=UTF8&iwloc=&output=embed" 
+                  style="overflow:hidden;margin:0px">
+              </iframe>
+              
+              <br>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+    <script src="../javascript/maps_location.js"></script>
+    <script src="../javascript/commonFunctions.js"></script>
+  </body>
+</html>

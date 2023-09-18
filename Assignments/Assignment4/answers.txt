@@ -1,0 +1,6 @@
+1. this is to limit data- and battery-usage, and prevent performance issues
+2. the logo do not change display to none. Dont know what the original value is.
+3. you only need to update content on one version instead of multiple
+Since most pages is first developed on web, people may not choose to have another
+for mobile if they dont use responesive design.
+Higher conversion rate
